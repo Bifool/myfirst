@@ -31,7 +31,7 @@ const App = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true); // Trigger the fade-in animation when mounted
+    setIsMounted(true); // Trigger the pulsate animation when mounted
   }, []);
 
   // Function to change text colors
@@ -46,7 +46,7 @@ const App = () => {
         {text.split("").map((char, index) => (
           <span
             key={index}
-            className={`cursor-pointer pulsate ${isMounted ? 'fade-in-bottom' : ''}`}
+            className={`cursor-pointer pulsate`}
             onClick={changeTextColors} // Change colors on click
             style={{ 
               color: textColors[index], // Apply inline color
