@@ -46,7 +46,7 @@ const App = () => {
         {text.split("").map((char, index) => (
           <span
             key={index}
-            className={`cursor-pointer fade-in-bottom-wave ${isMounted ? 'fade-in-bottom' : ''}`}
+            className={`cursor-pointer pulsate ${isMounted ? 'fade-in-bottom' : ''}`}
             onClick={changeTextColors} // Change colors on click
             style={{ 
               color: textColors[index], // Apply inline color

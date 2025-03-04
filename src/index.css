@@ -9,8 +9,8 @@
   font-family: var(--font-times);
 }
 
-/* Wave animation */
-@keyframes wave {
+/* Pulsate animation */
+@keyframes pulsate {
   0%, 100% {
     transform: translateY(0);
   }
@@ -19,20 +19,7 @@
   }
 }
 
-.wave {
+.pulsate {
   display: inline-block;
-  animation: wave 1s infinite;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 2s ease-in-out;
+  animation: pulsate 1s infinite;
 }
