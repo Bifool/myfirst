@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Custom font */
+@theme {
+  --font-times: "Times New Roman", Times, serif;
+}
+
+.font-times {
+  font-family: var(--font-times);
+}
+
+/* Wave animation */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
